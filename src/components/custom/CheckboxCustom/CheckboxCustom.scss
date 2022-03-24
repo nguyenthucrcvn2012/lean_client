@@ -1,0 +1,17 @@
+.checkbox-custom {
+	padding: 0px 0px 3px 0px !important;
+	.MuiSvgIcon-root {
+		color :rgb(109, 104, 107) !important;
+		border : none !important;
+	}
+	&.Mui-checked {
+		.MuiSvgIcon-root {
+			background-image: none !important;
+		}
+	}
+	&.Mui-disabled {
+		.MuiSvgIcon-root {
+			color: #B6B6B6 !important;
+		}
+  }
+}

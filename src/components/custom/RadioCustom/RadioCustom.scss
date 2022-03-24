@@ -1,0 +1,28 @@
+.radio-custom {
+  color: #3F3F3F  !important;
+  padding: 0 !important;
+  .MuiSvgIcon-root {
+    width: 1rem !important;
+    height: 1rem !important;
+    border-color: #3F3F3F  !important;
+  }
+  height: 24px;
+  &:after {
+    width: 0.5rem !important;
+    height: 0.5rem !important;
+    background-image: none !important;
+    background-color: #3F3F3F !important;
+  }
+  &.Mui-disabled {
+    .MuiSvgIcon-root {
+      border-color: #B6B6B6 !important;
+    }
+    &:after {
+      background-color: #B6B6B6 !important;
+    }
+  }
+}
+
+.radio-label-custom {
+  font-size: 0.85rem;
+}

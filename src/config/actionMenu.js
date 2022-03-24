@@ -1,0 +1,6 @@
+export default {
+  OPEN_POPUP: 'OPEN_POPUP',
+  REDIRECT: 'REDIRECT',
+  MAIN_GRID: 'MAIN_GRID',
+  OPEN_URL: 'OPEN_URL',
+}

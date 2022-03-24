@@ -1,0 +1,38 @@
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff !important;
+  border: 1px solid #303030;
+  box-shadow: 24;
+
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #E6E6E6 0%, 25.619250535964966%, #525252 51.23850107192993%, 75.61925053596497%, #656565 100%);
+    color: #fff;
+    .MuiTypography-root {
+      padding: 5px 10px;
+      color: #fff;
+      font-size: 0.85rem;
+    }
+    .MuiButtonBase-root {
+      color: #0E0E0E;
+      font-size: 1rem;
+    }
+  }
+
+  .popup-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 8px;
+    background: linear-gradient(to top, #D8D8D8 38.28733265399933%, 43.09978783130646%, #DCDCDC 47.912243008613586%, 73.9561215043068%, #ECECEC 100%);
+    .btn-border {
+      border: 1px solid #333333 !important;
+    }
+  }
+}

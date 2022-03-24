@@ -1,0 +1,37 @@
+import React from 'react';
+import Grid from '@mui/material/Grid';
+import MDBox from 'components/MD/MDBox';
+import PageLayout from 'components/PageLayout';
+
+const BasicLayout = ({ image, backgroundColor, children }) => {
+  return (
+    <PageLayout background={backgroundColor}>
+      <MDBox
+        position="absolute"
+        width="100%"
+        minHeight="100vh"
+        sx={{
+          backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
+            image &&
+            `${linearGradient(
+              rgba(gradients.dark.main, 0.6),
+              rgba(gradients.dark.state, 0.6)
+            )}, url(${image})`,
+            
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      />
+      <MDBox px={1} width="100%" height="80vh" mx="auto">
+        <Grid container spacing={1} justifyContent="center" alignItems="center" height="100%">
+          <Grid item xs={11} sm={9} md={5} lg={4} xl={3}>
+            {children}
+          </Grid>
+        </Grid>
+      </MDBox>
+    </PageLayout>
+  );
+};
+
+export default BasicLayout;
